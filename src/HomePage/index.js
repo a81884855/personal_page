@@ -4,7 +4,7 @@ import Home from "./Home";
 import Projects from "./Projects";
 import About from "./About";
 
-export const Index = () => {
+export default () => {
   return (
     <>
       <Head />
