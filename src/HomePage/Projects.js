@@ -8,7 +8,15 @@ const data = [
     name: "Super Card Saver",
     website: "http://www.supercardsaver.com",
     github: "https://github.com/a81884855/card-saver",
-    technologies: ["Full-Stack", "MERN-Stack", "AWS", "Docker", "GraphQL"],
+    technologies: [
+      "Full-Stack",
+      "React.JS",
+      "Node.JS",
+      "MongoDB",
+      "AWS",
+      "Docker",
+      "GraphQL"
+    ],
     description:
       "I designed a website to help people identify credit cards with most cash reward.",
     images: [
@@ -35,7 +43,7 @@ const data = [
     name: "Mine Sweeper",
     website: "/minesweeper",
     github: "https://github.com/a81884855/mine-sweeper",
-    technologies: ["Front-End", "MERN-Stack", "Heroku"],
+    technologies: ["Front-End", "React.JS", "Node.JS", "MongoDB", "AWS"],
     description: "A mine sweeper mini application with 3 difficulty level",
     images: [
       "https://i.imgur.com/6CGzlKa.png",
@@ -47,7 +55,7 @@ const data = [
     name: "Catch Box",
     website: "https://weekmvp.herokuapp.com/",
     github: "https://github.com/a81884855/hrsf114-mvp",
-    technologies: ["Full-Stack", "MERN-Stack", "Heroku"],
+    technologies: ["Full-Stack", "React.JS", "Node.JS", "MongoDB", "Heroku"],
     description: "A Catch-Box mini application",
     images: ["https://i.imgur.com/tpJPPVB.png"]
   },
@@ -55,7 +63,7 @@ const data = [
     name: "Personal Page",
     website: "http://www.gary-guan.com/",
     github: "https://github.com/a81884855/personal-page",
-    technologies: ["Full-Stack", "MERN-Stack", "AWS", "Docker"],
+    technologies: ["Full-Stack", "React.JS", "Node.JS", "AWS", "Docker"],
     description: "My personal page, Do you like it? ",
     images: [
       "https://i.imgur.com/CnsqPqa.png",
@@ -77,7 +85,9 @@ const skills = [
   "Full-Stack",
   "Front-End",
   "Back-End",
-  "MERN-Stack",
+  "React.JS",
+  "Node.JS",
+  "MongoDB",
   "Docker",
   "GraphQL",
   "AWS",
