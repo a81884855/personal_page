@@ -1,0 +1,28 @@
+div#boardHead {
+  width: 100%;
+  display: inline-flex;
+  height: auto;
+  font-size: 2vw;
+}
+
+div#reset {
+  width: 4vw;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+div.buttonIcon {
+  width: 100%;
+  height: 100%;
+}
+
+div#mode {
+  width: 8vw;
+}
+
+.rule {
+  margin: -50px 0 0 50px;
+}
