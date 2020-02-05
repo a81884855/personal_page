@@ -63,7 +63,11 @@ class Cell extends React.Component {
         {(hasMine && isOpen) || (hasMine && !status && !hasFlag) ? (
           <img src="https://i.imgur.com/bH8hLVi.png" alt="" />
         ) : count > 0 && isOpen ? (
-          <img id="cell" src={`/minesweeper/number/${count}.png`} alt="" />
+          <img
+            id="cell"
+            src={`/assets/minesweeper/number/${count}.png`}
+            alt=""
+          />
         ) : null}
       </div>
     );

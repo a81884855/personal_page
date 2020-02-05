@@ -1,58 +1,41 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import React from "react";
+import Grid from "@material-ui/core/Grid";
 
-const BoardHead = (props) => {
-  const {
-    mines, second, reset, status, result,
-  } = props;
-  const smileStyle = { display: status ? null : 'none' };
-  const cryStyle = { display: (!status && !result) ? null : 'none' };
-  const winStyle = { display: (!status && result) ? null : 'none' };
+const BoardHead = props => {
+  const { mines, second, reset, status, result } = props;
+  const smileStyle = { display: status ? null : "none" };
+  const cryStyle = { display: !status && !result ? null : "none" };
+  const winStyle = { display: !status && result ? null : "none" };
   return (
     <div id="boardHead">
-      <Grid
-        container
-        direction="row"
-        justify="flex-start"
-        alignItems="center"
-      >
+      <Grid container direction="row" justify="flex-start" alignItems="center">
         <div id="mineInfo">
-Mine:
+          Mine:
           {mines}
         </div>
       </Grid>
-      <Grid
-        container
-        direction="row"
-        justify="center"
-      >
+      <Grid container direction="row" justify="center">
         <div
           id="reset"
-          onClick={() => { reset(); }}
+          onClick={() => {
+            reset();
+          }}
           role="button"
           tabIndex="0"
         >
           <div className="buttonIcon" style={smileStyle}>
-            <img src="./smile.png" alt="" />
+            <img src="/assets/minesweeper/smile.png" alt="" />
           </div>
           <div className="buttonIcon" style={cryStyle}>
-            <img src="./cry.png" alt="" />
+            <img src="/assets/minesweeper/cry.png" alt="" />
           </div>
           <div className="buttonIcon" style={winStyle}>
-            <img src="./win.png" alt="" />
+            <img src="/assets/minesweeper/win.png" alt="" />
           </div>
-
         </div>
       </Grid>
-      <Grid
-        container
-        direction="row"
-        justify="flex-end"
-        alignItems="center"
-      >
-Time:
-        {' '}
-        {second}
+      <Grid container direction="row" justify="flex-end" alignItems="center">
+        Time: {second}
       </Grid>
     </div>
   );
