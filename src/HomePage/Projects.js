@@ -66,6 +66,7 @@ const data = [
     ],
     description: "Space X rockets launches information platform",
     images: [
+      "/static/media/logo.7dab9996.png",
       "https://i.imgur.com/94lOeiB.png",
       "https://i.imgur.com/WTdBBdx.png",
       "https://i.imgur.com/oA6XkeT.png"
