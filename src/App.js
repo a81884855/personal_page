@@ -5,7 +5,6 @@ import MineSweeper from "./Projects/mine_sweeper";
 import SpaceX from "./Projects/space-x";
 
 export default function App() {
-  console.log(process.env.spaceXendPoint);
   return (
     <Router>
       <Switch>
