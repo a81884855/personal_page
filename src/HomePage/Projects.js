@@ -11,7 +11,6 @@ const data = [
     technologies: [
       "Full-Stack",
       "React.JS",
-      "Node.JS",
       "MongoDB",
       "AWS",
       "Docker",
@@ -103,6 +102,7 @@ const skills = [
   "MongoDB",
   "Docker",
   "GraphQL",
+  "Serverlss",
   "AWS",
   "Heroku"
 ];
