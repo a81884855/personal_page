@@ -64,7 +64,7 @@ const data = [
       "MongoDB",
       "AWS"
     ],
-    description: "Space X rockets launches information search engine",
+    description: "Space X rockets launches information platform",
     images: [
       "https://i.imgur.com/94lOeiB.png",
       "https://i.imgur.com/WTdBBdx.png",
