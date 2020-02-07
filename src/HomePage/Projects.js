@@ -15,7 +15,8 @@ const data = [
       "MongoDB",
       "AWS",
       "Docker",
-      "GraphQL"
+      "GraphQL",
+      "Serverlss"
     ],
     description:
       "I designed a website to help people identify credit cards with most cash reward.",
@@ -52,12 +53,23 @@ const data = [
     ]
   },
   {
-    name: "Catch Box",
-    website: "https://weekmvp.herokuapp.com/",
-    github: "https://github.com/a81884855/hrsf114-mvp",
-    technologies: ["Full-Stack", "React.JS", "Node.JS", "MongoDB", "Heroku"],
-    description: "A Catch-Box mini application",
-    images: ["https://i.imgur.com/tpJPPVB.png"]
+    name: "Space X",
+    website: "/space-x",
+    github: "https://github.com/a81884855/space-x",
+    technologies: [
+      "Full-Stack",
+      "Serverlss",
+      "React.JS",
+      "GraphQL",
+      "MongoDB",
+      "AWS"
+    ],
+    description: "Space X rockets launches information search engine",
+    images: [
+      "https://i.imgur.com/94lOeiB.png",
+      "https://i.imgur.com/WTdBBdx.png",
+      "https://i.imgur.com/oA6XkeT.png"
+    ]
   },
   {
     name: "Personal Page",
