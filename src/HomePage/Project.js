@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Image } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import ProjectDeatil from "./ProjectDetail";
 
 const Project = ({
@@ -25,15 +25,17 @@ const Project = ({
     right: 0,
     zIndex: -1
   };
-  const imgStyle = {
-    opacity: hover ? 0.06 : 1,
-    objectFit: "contain"
-  };
 
   return (
     <>
       <Col
         className="project "
+        style={{
+          backgroundImage: !hover ? `url(${images[0]})` : null,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover"
+        }}
         xl={3}
         lg={4}
         md={5}
@@ -49,7 +51,6 @@ const Project = ({
         }}
         onMouseDownCapture={() => setShow(true)}
       >
-        <Image style={imgStyle} src={images[0]} />
         <div style={descrStyle}>
           <p className="projectName">{name}</p>
           <p className="description">{description}</p>
