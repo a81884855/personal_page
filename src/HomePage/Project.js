@@ -14,18 +14,6 @@ const Project = ({
   const [hover, setHover] = useState(false);
   const [show, setShow] = useState(false);
 
-  const descrStyle = {
-    opacity: hover ? 1 : 0,
-    position: "absolute",
-    margin: "auto",
-    textAlign: "center",
-    top: 20,
-    left: 0,
-    bottom: 0,
-    right: 0,
-    zIndex: -1
-  };
-
   return (
     <>
       <Col
@@ -51,7 +39,7 @@ const Project = ({
         }}
         onMouseDownCapture={() => setShow(true)}
       >
-        <div style={descrStyle}>
+        <div className="projectDescr ">
           <p className="projectName">{name}</p>
           <p className="description">{description}</p>
         </div>

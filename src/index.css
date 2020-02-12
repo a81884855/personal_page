@@ -172,3 +172,15 @@ a.projectLink {
   -webkit-user-select: none;
   -o-user-select: none;
 }
+
+.projectDescr {
+  opacity: 1;
+  position: absolute;
+  margin: 20px auto;
+  text-align: center;
+  z-index: -1;
+}
+
+.projectDescr:hover {
+  opacity: 0;
+}
