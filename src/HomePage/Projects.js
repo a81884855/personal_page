@@ -133,7 +133,6 @@ const Projects = () => {
   };
 
   const filterProjects = technology => {
-    console.log(technology);
     if (technology === "All") {
       return setProjects(data);
     } else {
@@ -148,7 +147,7 @@ const Projects = () => {
     <div id="projects">
       <Row className="justify-content-md-center" lg={10} md={11}>
         <Col xs={12} sm={2} style={{ maxWidth: 150 }}>
-          <h1 id="skills">Skills: </h1>
+          <h1 id="skills">Stacks: </h1>
         </Col>
         <Col style={{ marginLeft: 10 }} xs={10} md={8}>
           {skills.map((skill, index) =>
