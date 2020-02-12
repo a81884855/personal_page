@@ -11,7 +11,7 @@ const colors = [
   "dark"
 ];
 
-const ButtonBuilder = (skill, index, selected = []) => {
+const ButtonBuilder = (skill, index, selected = [], filterProjects) => {
   return (
     <Button
       className="tech"
@@ -21,6 +21,7 @@ const ButtonBuilder = (skill, index, selected = []) => {
           ? `${colors[index % colors.length]}`
           : `outline-${colors[index % colors.length]}`
       }
+      onClick={() => filterProjects(skill)}
     >
       {skill}
     </Button>
