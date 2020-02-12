@@ -10,7 +10,7 @@ const Home = () => {
       </div>
       <div id="homeInfo">
         <Row>
-          <Col>
+          <Col className="unselectable">
             <ReactTyped
               strings={[
                 "Hi, I'm Gary, nice to meet you!<br> I'm a Self Motivated Developer",
