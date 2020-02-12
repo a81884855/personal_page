@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import Project from "./Project";
 import ButtonBuilder from "../helper/ButtonBuilder";
@@ -12,10 +12,13 @@ const data = [
       "Full-Stack",
       "React.JS",
       "MongoDB",
+      "Apollo",
       "AWS",
       "Docker",
       "GraphQL",
-      "Serverlss"
+      "Serverlss",
+      "Boostrap",
+      "MaterialUI"
     ],
     description:
       "I designed a website to help people identify credit cards with most cash reward.",
@@ -57,11 +60,13 @@ const data = [
     github: "https://github.com/a81884855/space-x",
     technologies: [
       "Full-Stack",
+      "Apollo",
       "Serverlss",
       "React.JS",
       "GraphQL",
       "MongoDB",
-      "AWS"
+      "AWS",
+      "Boostrap"
     ],
     description: "Space X rockets launches information platform",
     images: [
@@ -75,7 +80,15 @@ const data = [
     name: "Personal Page",
     website: "http://www.gary-guan.com/",
     github: "https://github.com/a81884855/personal-page",
-    technologies: ["Full-Stack", "React.JS", "Node.JS", "AWS", "Docker"],
+    technologies: [
+      "Full-Stack",
+      "React.JS",
+      "Node.JS",
+      "AWS",
+      "Docker",
+      "Boostrap",
+      "MaterialUI"
+    ],
     description: "My personal page, Do you like it? ",
     images: [
       "https://i.imgur.com/CnsqPqa.png",
@@ -97,68 +110,70 @@ const skills = [
   "Full-Stack",
   "Front-End",
   "Back-End",
+  "Apollo",
   "React.JS",
   "Node.JS",
   "MongoDB",
   "Docker",
   "GraphQL",
   "Serverlss",
+  "Redux",
   "AWS",
-  "Heroku"
+  "Heroku",
+  "Boostrap",
+  "MaterialUI"
 ];
 
-class Projects extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      projects: data,
-      selected: ""
-    };
-  }
+const Projects = () => {
+  const [projects, setProjects] = useState(data);
+  const [selected, setSelected] = useState("");
 
-  toggleHandler(e) {
-    this.setState({
-      selected: [e.target.id]
-    });
-  }
+  const projectHandler = technologies => {
+    setSelected(technologies);
+  };
 
-  projectHandler(technologies) {
-    this.setState({
-      selected: technologies
-    });
-  }
+  const filterProjects = technology => {
+    console.log(technology);
+    if (technology === "All") {
+      return setProjects(data);
+    } else {
+      let filtered = data.filter(project =>
+        project.technologies.includes(technology)
+      );
+      return setProjects(filtered);
+    }
+  };
 
-  render() {
-    const { projects, selected } = this.state;
-    return (
-      <div id="projects">
-        <Row className="justify-content-md-center" lg={10} md={11}>
-          <Col xs={12} sm={2} style={{ maxWidth: 150 }}>
-            <h1 id="skills">Skills: </h1>
-          </Col>
-          <Col style={{ marginLeft: 10 }} xs={10} md={8}>
-            {skills.map((skill, index) =>
-              ButtonBuilder(skill, index, selected)
-            )}
-          </Col>
-        </Row>
-        <Row className="justify-content-md-center">
-          {projects.map(project => (
+  return (
+    <div id="projects">
+      <Row className="justify-content-md-center" lg={10} md={11}>
+        <Col xs={12} sm={2} style={{ maxWidth: 150 }}>
+          <h1 id="skills">Skills: </h1>
+        </Col>
+        <Col style={{ marginLeft: 10 }} xs={10} md={8}>
+          {skills.map((skill, index) =>
+            ButtonBuilder(skill, index, selected, filterProjects)
+          )}
+        </Col>
+      </Row>
+      <Row className="justify-content-md-center">
+        {projects.map(
+          ({ name, website, technologies, description, images, github }) => (
             <Project
-              key={project.name}
-              name={project.name}
-              website={project.website}
-              technologies={project.technologies}
-              description={project.description}
-              images={project.images}
-              github={project.github}
-              projectHandler={this.projectHandler.bind(this)}
+              key={name}
+              name={name}
+              website={website}
+              technologies={technologies}
+              description={description}
+              images={images}
+              github={github}
+              projectHandler={name => projectHandler(name)}
             />
-          ))}
-        </Row>
-      </div>
-    );
-  }
-}
+          )
+        )}
+      </Row>
+    </div>
+  );
+};
 
 export default Projects;
