@@ -8,7 +8,14 @@ export default function({
   return (
     <div
       className="card card-body mb-3"
-      style={{ background: launch_success ? "#28a745" : "#dc3545" }}
+      style={{
+        background:
+          launch_success === null
+            ? "cornflowerblue"
+            : launch_success
+            ? "#28a745"
+            : "#dc3545"
+      }}
     >
       <div className="row">
         <div className="col-md-9">
