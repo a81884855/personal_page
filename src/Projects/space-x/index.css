@@ -32,3 +32,11 @@ code {
   background-color: #222;
   border: 1px solid #282828;
 }
+
+.bg-planing {
+  background: cornflowerblue;
+}
+
+.text-planing {
+  color: cornflowerblue;
+}
