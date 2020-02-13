@@ -10,6 +10,7 @@ import "./index.css";
 
 const client = new ApolloClient({
   uri: "https://4zazeyvm38.execute-api.us-east-1.amazonaws.com/prod/graphql"
+  // uri: "http://localhost:3000/graphql"
 });
 
 class App extends Component {
