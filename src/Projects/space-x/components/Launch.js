@@ -36,7 +36,7 @@ export class Launch extends Component {
         <Query query={LAUNCH_QUERY} variables={{ flight_number }}>
           {({ loading, error, data }) => {
             if (loading) return <h4>Loading</h4>;
-            if (error) console.log(error);
+            if (error) return <div>Sorry! Can't fetch the data</div>;
 
             const {
               mission_name,
