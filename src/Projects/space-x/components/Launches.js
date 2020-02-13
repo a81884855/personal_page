@@ -28,7 +28,7 @@ export class Launches extends Component {
               return <h2 style={{ marginTop: 40 }}>Can't fetch the data</h2>;
             return (
               <>
-                {data.launches.reverse().map(launch => (
+                {data.launches.map(launch => (
                   <LaunchItem key={launch.flight_number} launch={launch} />
                 ))}
               </>
