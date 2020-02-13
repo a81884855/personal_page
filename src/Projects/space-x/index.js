@@ -9,7 +9,7 @@ import "./index.css";
 // import "./bootstrap.min.css";
 
 const client = new ApolloClient({
-  uri: "https://kvbshnusjk.execute-api.us-east-1.amazonaws.com/dev/graphql"
+  uri: "https://4zazeyvm38.execute-api.us-east-1.amazonaws.com/prod/graphql"
 });
 
 class App extends Component {
