@@ -17,7 +17,7 @@ const data = [
       "Docker",
       "GraphQL",
       "Serverlss",
-      "Boostrap",
+      "Bootstrap",
       "MaterialUI"
     ],
     description:
@@ -66,7 +66,7 @@ const data = [
       "GraphQL",
       "MongoDB",
       "AWS",
-      "Boostrap"
+      "Bootstrap"
     ],
     description: "Space X rockets launches information platform",
     images: [
@@ -86,7 +86,7 @@ const data = [
       "Node.JS",
       "AWS",
       "Docker",
-      "Boostrap",
+      "Bootstrap",
       "MaterialUI"
     ],
     description: "My personal page, Do you like it? ",
@@ -120,7 +120,7 @@ const skills = [
   "Redux",
   "AWS",
   "Heroku",
-  "Boostrap",
+  "Bootstrap",
   "MaterialUI"
 ];
 
