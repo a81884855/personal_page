@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export default function({
   launch: { flight_number, mission_name, launch_date_local, launch_success }
 }) {
+  console.log(typeof launch_success);
   return (
     <div
       className="card card-body mb-3"
@@ -12,7 +13,7 @@ export default function({
         background:
           launch_success === null
             ? "cornflowerblue"
-            : launch_success
+            : launch_success === "true"
             ? "#28a745"
             : "#dc3545"
       }}
