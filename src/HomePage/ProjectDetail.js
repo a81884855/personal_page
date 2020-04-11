@@ -11,7 +11,7 @@ const ProjectDetail = ({
   website,
   github,
   show,
-  onHide
+  onHide,
 }) => {
   return (
     <Modal
@@ -26,7 +26,7 @@ const ProjectDetail = ({
       </Modal.Header>
       <Modal.Body>
         <Carousel>
-          {images.map(image => (
+          {images.map((image) => (
             <Carousel.Item style={{ height: 350 }} key="image">
               <Image src={image} alt="First slide" fluid />
             </Carousel.Item>

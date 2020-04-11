@@ -8,7 +8,7 @@ const colors = [
   "secondary",
   "info",
   "warning",
-  "dark"
+  "dark",
 ];
 
 const ButtonBuilder = (skill, index, selected = [], filterProjects) => {
@@ -21,7 +21,7 @@ const ButtonBuilder = (skill, index, selected = [], filterProjects) => {
           ? `${colors[index % colors.length]}`
           : `outline-${colors[index % colors.length]}`
       }
-      onClick={() => filterProjects(skill)}
+      onClick={() => (filterProjects ? filterProjects(skill) : null)}
     >
       {skill}
     </Button>
