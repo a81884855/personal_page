@@ -27,7 +27,7 @@ const ProjectDetail = ({
       <Modal.Body>
         <Carousel>
           {images.map((image) => (
-            <Carousel.Item style={{ height: 350 }} key={image}>
+            <Carousel.Item style={{ height: "auto" }} key={image}>
               <Image src={image} alt="First slide" fluid />
             </Carousel.Item>
           ))}
