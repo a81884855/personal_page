@@ -6,8 +6,8 @@ import ButtonBuilder from "../helper/ButtonBuilder";
 const data = [
   {
     name: "Super Card Saver",
-    website: "http://www.supercardsaver.com",
-    github: "https://github.com/a81884855/card-saver",
+    website: "https://a81884855.github.io/Super-Card-Saver-Front-End/",
+    github: "https://github.com/a81884855/Super-Card-Saver-Front-End/",
     technologies: [
       "Full-Stack",
       "React.JS",
@@ -18,7 +18,7 @@ const data = [
       "GraphQL",
       "Serverlss",
       "Bootstrap",
-      "MaterialUI"
+      "MaterialUI",
     ],
     description:
       "I designed a website to help people identify credit cards with most cash reward.",
@@ -26,8 +26,8 @@ const data = [
       "https://i.imgur.com/LaEzRIS.png",
       "https://i.imgur.com/JGWqubB.png",
       "https://i.imgur.com/tWBe9S8.png",
-      "https://i.imgur.com/uXhtalb.png"
-    ]
+      "https://i.imgur.com/uXhtalb.png",
+    ],
   },
   {
     name: "6 Full-Tables",
@@ -39,8 +39,8 @@ const data = [
     images: [
       "https://i.imgur.com/sgiAS38.png",
       "https://i.imgur.com/pBDtwH2r.png",
-      "https://i.imgur.com/pBDtwH2r.png"
-    ]
+      "https://i.imgur.com/pBDtwH2r.png",
+    ],
   },
   {
     name: "Mine Sweeper",
@@ -51,8 +51,8 @@ const data = [
     images: [
       "https://i.imgur.com/6CGzlKa.png",
       "https://i.imgur.com/0UXQ8Hb.png",
-      "https://i.imgur.com/YDOX9aH.png"
-    ]
+      "https://i.imgur.com/YDOX9aH.png",
+    ],
   },
   {
     name: "Space X",
@@ -66,15 +66,15 @@ const data = [
       "GraphQL",
       "MongoDB",
       "AWS",
-      "Bootstrap"
+      "Bootstrap",
     ],
     description: "Space X rockets launches information platform",
     images: [
       "/static/media/logo.7dab9996.png",
       "https://i.imgur.com/H9G3J1s.png",
       "https://i.imgur.com/mOenSXs.png",
-      "https://i.imgur.com/TO8ANTn.png"
-    ]
+      "https://i.imgur.com/TO8ANTn.png",
+    ],
   },
   {
     name: "Personal Page",
@@ -87,13 +87,13 @@ const data = [
       "AWS",
       "Docker",
       "Bootstrap",
-      "MaterialUI"
+      "MaterialUI",
     ],
     description: "My personal page, Do you like it? ",
     images: [
       "https://i.imgur.com/CnsqPqa.png",
-      "https://i.imgur.com/79jyKkar.jpg"
-    ]
+      "https://i.imgur.com/79jyKkar.jpg",
+    ],
   },
   {
     name: "Spending Report",
@@ -101,8 +101,8 @@ const data = [
     github: "https://github.com/a81884855/data-analysis",
     technologies: ["MERN-Stack", "Heroku", "Front-End"],
     description: "Import CSV file and generate a diagram",
-    images: ["https://i.imgur.com/lsHSNZ1.png"]
-  }
+    images: ["https://i.imgur.com/lsHSNZ1.png"],
+  },
 ];
 
 const skills = [
@@ -121,22 +121,22 @@ const skills = [
   "AWS",
   "Heroku",
   "Bootstrap",
-  "MaterialUI"
+  "MaterialUI",
 ];
 
 const Projects = () => {
   const [projects, setProjects] = useState(data);
   const [selected, setSelected] = useState("");
 
-  const projectHandler = technologies => {
+  const projectHandler = (technologies) => {
     setSelected(technologies);
   };
 
-  const filterProjects = technology => {
+  const filterProjects = (technology) => {
     if (technology === "All") {
       return setProjects(data);
     } else {
-      let filtered = data.filter(project =>
+      let filtered = data.filter((project) =>
         project.technologies.includes(technology)
       );
       return setProjects(filtered);
@@ -166,7 +166,7 @@ const Projects = () => {
               description={description}
               images={images}
               github={github}
-              projectHandler={name => projectHandler(name)}
+              projectHandler={(name) => projectHandler(name)}
             />
           )
         )}
