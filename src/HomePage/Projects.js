@@ -5,6 +5,44 @@ import ButtonBuilder from "../helper/ButtonBuilder";
 
 const data = [
   {
+    name: "COVID-19 Track",
+    website: "https://a81884855.github.io/covid-19-track/",
+    github: "https://github.com/a81884855/covid-19-track",
+    technologies: ["Front-End", "React.JS", "Bootstrap", "MaterialUI"],
+    description:
+      "I designed a website to track COVID-19 data. Including World Map, United States Map and Historical Data",
+    images: [
+      "https://i.imgur.com/SFmuETw.png",
+      "https://i.imgur.com/1FjSs5p.png",
+      "https://i.imgur.com/b3D7c6C.png",
+    ],
+  },
+  {
+    name: "E-Commerce Boiler",
+    website: "https://a81884855.github.io/E-Commerce-Full-Stack-Boilerplate",
+    github: "https://github.com/a81884855/E-Commerce-Full-Stack-Boilerplate",
+    technologies: [
+      "Full-Stack",
+      "React.JS",
+      "AWS",
+      "Serverlss",
+      "Bootstrap",
+      "MaterialUI",
+    ],
+    description: "I designed and created a e-commerce website boiler template.",
+    images: [
+      "https://i.imgur.com/aagxY5vr.png",
+      "https://i.imgur.com/A99CqABr.png",
+      "https://i.imgur.com/CXCPxWfr.png",
+      "https://i.imgur.com/0BJh5oRr.png",
+      "https://i.imgur.com/oNE5VJar.png",
+      "https://i.imgur.com/OFH39t2r.png",
+      "https://i.imgur.com/DDaeAu8r.png",
+      "https://i.imgur.com/D8mG0Llr.png",
+      "https://i.imgur.com/Rnh39Pvr.png",
+    ],
+  },
+  {
     name: "Super Card Saver",
     website: "https://a81884855.github.io/Super-Card-Saver-Front-End/",
     github: "https://github.com/a81884855/Super-Card-Saver-Front-End/",
